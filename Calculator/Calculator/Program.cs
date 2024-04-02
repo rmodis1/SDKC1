@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Calculator;
 
 namespace KnowledgeCheck1_Calculator
 {
@@ -30,7 +31,7 @@ namespace KnowledgeCheck1_Calculator
                     }
                     else
                     {
-                        Console.WriteLine("One or more of the numbers is not an int");
+                        Numbers.ErrorMessage();
                     }
                     break;
 
