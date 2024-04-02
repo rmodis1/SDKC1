@@ -5,7 +5,7 @@ namespace Calculator
 	{
 		public static void ErrorMessage()
 		{
-         Console.WriteLine("One or more of the numbers is not an int");
+         Console.WriteLine("One or more of the numbers is not an integer. Please try again.");
 		}
 	}
 }
