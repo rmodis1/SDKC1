@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KnowledgeCheck1_Calculator
+namespace Calculator
 {
     public class Calculator
     {
@@ -23,8 +23,13 @@ namespace KnowledgeCheck1_Calculator
             return first * second;
         }
 
-        public double Divide(double first, double second)
+        public double? Divide(double first, double second)
         {
+            if (second == 0)
+            {
+                Console.WriteLine("Cannot divide by zero.");
+                return null;
+            }
             return first / second;
         }
     }
